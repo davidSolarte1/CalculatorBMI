@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Nombre -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="Escribe tu nombre"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <!-- Peso -->
+    <View
+        android:id="@+id/vWeight"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#219bcc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintBottom_toBottomOf="@id/vWeight"
+        app:layout_constraintEnd_toEndOf="@id/vWeight"
+        app:layout_constraintStart_toStartOf="@id/vWeight"
+        app:layout_constraintTop_toTopOf="@id/vWeight"
+        android:textColor="#000"
+        android:text="Ingresa tu \npeso"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintBottom_toBottomOf="@id/vWeight"
+        app:layout_constraintEnd_toEndOf="@id/vWeight"
+        app:layout_constraintStart_toEndOf="@id/etWeight"
+        app:layout_constraintTop_toTopOf="@id/etWeight"
+        android:textColor="#000"
+        android:text="(Kg)"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:inputType="number"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="@id/vWeight"
+        app:layout_constraintEnd_toEndOf="@id/vWeight"
+        app:layout_constraintStart_toStartOf="@id/vWeight"
+        app:layout_constraintTop_toTopOf="@id/vWeight"
+        android:textAlignment="center"/>
+
+    <!-- Altura -->
+    <View
+        android:id="@+id/vHeight"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#219bcc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="@id/vHeight"
+        app:layout_constraintEnd_toEndOf="@id/vHeight"
+        app:layout_constraintStart_toStartOf="@id/vHeight"
+        app:layout_constraintTop_toTopOf="@id/vHeight"
+        android:textColor="#000"
+        android:text="Ingresa tu \nestatura"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintBottom_toBottomOf="@id/vHeight"
+        app:layout_constraintEnd_toEndOf="@id/vHeight"
+        app:layout_constraintStart_toEndOf="@id/etHeight"
+        app:layout_constraintTop_toTopOf="@id/etHeight"
+        android:textColor="#000"
+        android:text="(cm)"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:inputType="number"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="@id/vHeight"
+        app:layout_constraintEnd_toEndOf="@id/vHeight"
+        app:layout_constraintStart_toStartOf="@id/vHeight"
+        app:layout_constraintTop_toTopOf="@id/vHeight"
+        android:textAlignment="center"/>
+
+    <!-- Sexo -->
+    <View
+        android:id="@+id/vSex"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#219bcc"/>
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="@id/vSex"
+        app:layout_constraintEnd_toEndOf="@id/vSex"
+        app:layout_constraintStart_toStartOf="@id/vSex"
+        app:layout_constraintTop_toTopOf="@id/vSex"
+        android:text="Selecciona tu\nsexo"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/btnMale"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#fff"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="@id/vSex"
+        app:layout_constraintEnd_toEndOf="@id/vSex"
+        app:layout_constraintStart_toStartOf="@id/vSex"
+        app:layout_constraintTop_toBottomOf="@id/tvSex"
+        android:src="@drawable/male"
+        android:scaleType="fitCenter"/>
+    <ImageButton
+        android:id="@+id/btnFemale"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#fff"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintBottom_toBottomOf="@id/vSex"
+        app:layout_constraintEnd_toEndOf="@id/vSex"
+        app:layout_constraintStart_toStartOf="@id/vSex"
+        app:layout_constraintTop_toBottomOf="@id/tvSex"
+        android:src="@drawable/female"
+        android:scaleType="fitCenter"/>
+
+    <!-- Edad -->
+    <View
+        android:id="@+id/vAge"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#219bcc"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="@id/vAge"
+        app:layout_constraintEnd_toEndOf="@id/vAge"
+        app:layout_constraintStart_toStartOf="@id/vAge"
+        app:layout_constraintTop_toTopOf="@id/vAge"
+        android:text="Ingresa tu \nedad"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintBottom_toBottomOf="@id/vAge"
+        app:layout_constraintEnd_toEndOf="@id/vAge"
+        app:layout_constraintStart_toEndOf="@id/etAge"
+        app:layout_constraintTop_toTopOf="@id/etAge"
+        android:textColor="#000"
+        android:text="(Años)"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:inputType="number"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="@id/vAge"
+        app:layout_constraintEnd_toEndOf="@id/vAge"
+        app:layout_constraintStart_toStartOf="@id/vAge"
+        app:layout_constraintTop_toTopOf="@id/vAge"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vAge"
+
+        android:backgroundTint="#173F77"
+        android:text="Calcular"
+        android:textSize="40dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
